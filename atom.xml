@@ -6,7 +6,7 @@
   <link href="https://lokk233.github.io/atom.xml" rel="self"/>
   
   <link href="https://lokk233.github.io/"/>
-  <updated>2025-03-11T15:03:17.109Z</updated>
+  <updated>2025-03-12T05:56:14.862Z</updated>
   <id>https://lokk233.github.io/</id>
   
   <author>
@@ -17,19 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://lokk233.github.io/2025/03/11/hello-world/"/>
-    <id>https://lokk233.github.io/2025/03/11/hello-world/</id>
-    <published>2025-03-11T15:03:17.109Z</published>
-    <updated>2025-03-11T15:03:17.109Z</updated>
+    <title>test</title>
+    <link href="https://lokk233.github.io/2025/03/12/test/"/>
+    <id>https://lokk233.github.io/2025/03/12/test/</id>
+    <published>2025-03-12T05:12:25.000Z</published>
+    <updated>2025-03-12T05:56:14.862Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your veryfirst post. Check <a href="https://hexo.io/docs/">documentation</a> formore info. If you get any problems when using Hexo, you can find theanswer in <ahref="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> oryou can ask me on <ahref="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="test">test</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very
-first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; fo</summary>
+    <summary type="html">&lt;h2 id=&quot;test&quot;&gt;test&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</summary>
+      
+    
+    
+    
+    <category term="test" scheme="https://lokk233.github.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="https://lokk233.github.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lokk233&#39;s Blog</title>
+    <link href="https://lokk233.github.io/2025/03/12/post/"/>
+    <id>https://lokk233.github.io/2025/03/12/post/</id>
+    <published>2025-03-12T05:10:26.000Z</published>
+    <updated>2025-03-12T05:33:48.807Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是lokk233的个人外置大脑，用于记录一些可能有用又可能没用的知识。</p><p>平时经常忘记东西，所以现在尝试通过建立blog来记录一些东西，大概也是一种在一些学习中维持兴趣的方式（笑）</p><p>不希望过段时间我就忘记更新blog这种事情发生吧（^ ^；</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是lokk233的个人外置大脑，用于记录一些可能有用又可能没用的知识。&lt;/p&gt;
+&lt;p&gt;平时经常忘记东西，所以现在尝试通过建立blog来记录一些东西，大概也是一种在一些学习中维持兴趣的方式（笑）&lt;/p&gt;
+&lt;p&gt;不希望过段时间我就忘记更新blog这种事情发生吧（^ ^；&lt;</summary>
       
     
     
