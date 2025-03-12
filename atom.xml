@@ -1,46 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>test</title>
+  <title>lokk233&#39;s blog</title>
   
+  <subtitle>个人外置大脑</subtitle>
+  <link href="https://lokk233.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
-  
-  <link href="http://example.com/"/>
-  <updated>2025-03-11T15:09:31.118Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://lokk233.github.io/"/>
+  <updated>2025-03-11T15:03:17.109Z</updated>
+  <id>https://lokk233.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>lokk233</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://example.com/2025/03/11/test/"/>
-    <id>http://example.com/2025/03/11/test/</id>
-    <published>2025-03-11T15:09:31.000Z</published>
-    <updated>2025-03-11T15:09:31.118Z</updated>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-      
-      
-    <summary type="html">
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2025/03/11/hello-world/"/>
-    <id>http://example.com/2025/03/11/hello-world/</id>
+    <link href="https://lokk233.github.io/2025/03/11/hello-world/"/>
+    <id>https://lokk233.github.io/2025/03/11/hello-world/</id>
     <published>2025-03-11T15:03:17.109Z</published>
     <updated>2025-03-11T15:03:17.109Z</updated>
     
