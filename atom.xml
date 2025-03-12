@@ -3,11 +3,11 @@
   <title>lokk233&#39;s blog</title>
   
   <subtitle>个人外置大脑</subtitle>
-  <link href="https://lokk233.github.io/atom.xml" rel="self"/>
+  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="https://lokk233.github.io/"/>
+  <link href="http://example.com/"/>
   <updated>2025-03-12T05:56:14.862Z</updated>
-  <id>https://lokk233.github.io/</id>
+  <id>http://example.com/</id>
   
   <author>
     <name>lokk233</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test</title>
-    <link href="https://lokk233.github.io/2025/03/12/test/"/>
-    <id>https://lokk233.github.io/2025/03/12/test/</id>
+    <link href="http://example.com/post/20250312131225.html"/>
+    <id>http://example.com/post/20250312131225.html</id>
     <published>2025-03-12T05:12:25.000Z</published>
     <updated>2025-03-12T05:56:14.862Z</updated>
     
@@ -40,17 +40,17 @@
     
     
     
-    <category term="test" scheme="https://lokk233.github.io/categories/test/"/>
+    <category term="test" scheme="http://example.com/categories/test/"/>
     
     
-    <category term="test" scheme="https://lokk233.github.io/tags/test/"/>
+    <category term="test" scheme="http://example.com/tags/test/"/>
     
   </entry>
   
   <entry>
     <title>Lokk233&#39;s Blog</title>
-    <link href="https://lokk233.github.io/2025/03/12/post/"/>
-    <id>https://lokk233.github.io/2025/03/12/post/</id>
+    <link href="http://example.com/post/20250312131026.html"/>
+    <id>http://example.com/post/20250312131026.html</id>
     <published>2025-03-12T05:10:26.000Z</published>
     <updated>2025-03-12T05:33:48.807Z</updated>
     
