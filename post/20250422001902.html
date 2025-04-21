@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>模电第一章 | lokk233&#39;s blog</title>
+    
+    
+        <meta name="keywords" content="模电" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="第一章 常用半导体器件 1.1.1 本征半导体  一、半导体:  1.导电性能介于导体与绝缘体之间 2.本征半导体：纯净的、具有晶体结构的半导体  二、本征半导体的晶体结构  三、载流子  1.本征激发：价带中的电子获得能量脱离共价键的束缚，进入导带成为导电子的过程；逃离，变成自由电子，留下空穴。 2.自由电子 3.空穴 4.复合：与本征激发相反，自由电子与空穴结合">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模电第一章">
+<meta property="og:url" content="http://example.com/post/20250422001902.html">
+<meta property="og:site_name" content="lokk233&#39;s blog">
+<meta property="og:description" content="第一章 常用半导体器件 1.1.1 本征半导体  一、半导体:  1.导电性能介于导体与绝缘体之间 2.本征半导体：纯净的、具有晶体结构的半导体  二、本征半导体的晶体结构  三、载流子  1.本征激发：价带中的电子获得能量脱离共价键的束缚，进入导带成为导电子的过程；逃离，变成自由电子，留下空穴。 2.自由电子 3.空穴 4.复合：与本征激发相反，自由电子与空穴结合">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://p.sda1.dev/22/86831aa608b8ef67bd1870d853140157/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-13%20152405.png">
+<meta property="og:image" content="https://p.sda1.dev/22/c599372a185aadef9398cbeeff110c38/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-13%20154655.png">
+<meta property="og:image" content="https://p.sda1.dev/22/a8c48a34ad5ff704b7ee5620a94dd01e/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-13%20160045.png">
+<meta property="og:image" content="https://p.sda1.dev/22/1707c2e0bdc243ff966dc05668c0edce/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-13%20160118.png">
+<meta property="og:image" content="https://p.sda1.dev/22/238d10ccf9a7109e00ced5498ebfe7b9/AB244F1CB17C828591D3DD2AA40CB602.jpg">
+<meta property="og:image" content="https://p.sda1.dev/22/90a817e45fc9c8805f39a60b21749814/2F39DBB04F26B457C9FD69623F5DCF25.jpg">
+<meta property="og:image" content="https://p.sda1.dev/22/048b2424fbb24ab7fceec6fd31f6f405/AC52CDB4EAE0DAABF13923EAF7EB69A3.jpg">
+<meta property="og:image" content="https://p.sda1.dev/22/0bcae203d72e0ca8fbe01c4e61ae36ea/2C4A99B4C0F06F07B6442ECA2261ADC8.jpg">
+<meta property="og:image" content="https://p.sda1.dev/23/774a08bc74c2ee848df50de7a59df567/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-09%20133708.png">
+<meta property="og:image" content="https://p.sda1.dev/23/997a0ad430b4493c08a44af1b26fcfb0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-09%20131429.png">
+<meta property="og:image" content="https://p.sda1.dev/23/1f908562f4b52dce567ff5a7f28f7cbd/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-19%20150020.png">
+<meta property="og:image" content="https://p.sda1.dev/23/2a6b99ec0fe9c1ab5c4cd0d736d9091b/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-19%20150045.png">
+<meta property="og:image" content="https://p.sda1.dev/23/39d72eb5999431c3446141c7482b0f73/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-19%20154740.png">
+<meta property="og:image" content="https://p.sda1.dev/23/549fdc66fbf527f4b8c3bdf769b9d2f0/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-19%20154800.png">
+<meta property="og:image" content="https://p.sda1.dev/23/1333ebb2c778f8c452ea617cf18354f2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-20%20152349.png">
+<meta property="og:image" content="https://p.sda1.dev/23/e1869cfedd4fa617eb67973b6c43c907/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-20%20163935.png">
+<meta property="og:image" content="https://p.sda1.dev/23/8d87d5ffa8cc3edd7aa049eed566a3de/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-20%20220114.png">
+<meta property="og:image" content="https://p.sda1.dev/23/da7e200cbb877560779be54d5e52f3a4/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-20%20221158.png">
+<meta property="og:image" content="https://p.sda1.dev/23/30753b08cd784b4e8157ce445f017806/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-20%20222601.png">
+<meta property="og:image" content="https://p.sda1.dev/23/5504e959cc8878f54fa33c6ef2f8083d/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-20%20222856.png">
+<meta property="og:image" content="https://p.sda1.dev/23/8a88d3c16c586bf8482ffa234d03b06e/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20152918.png">
+<meta property="og:image" content="https://p.sda1.dev/23/8de5f1cff069ae5296dc673e481a2e10/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20152937.png">
+<meta property="og:image" content="https://p.sda1.dev/23/e2fec0a7f36e1bbdbc44f7c3e24b46c9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20153028.png">
+<meta property="og:image" content="https://p.sda1.dev/23/0828898a04cbc3426a05b93ee1cc1d71/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20153542.png">
+<meta property="og:image" content="https://p.sda1.dev/23/0448e580572df6f13c4960a20f1dbfe3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20153657.png">
+<meta property="og:image" content="https://p.sda1.dev/23/4c70088257c579323069ce85a690078e/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225512.png">
+<meta property="og:image" content="https://p.sda1.dev/23/2dce55406227360d4aebb451302d8249/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225532.png">
+<meta property="og:image" content="https://p.sda1.dev/23/8f8673421cc95f5af3b758b3d3ee20ad/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225621.png">
+<meta property="og:image" content="https://p.sda1.dev/23/2724b01855c4a2bbfe9bc1935c210a04/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225611.png">
+<meta property="og:image" content="https://p.sda1.dev/23/ad09a0c3112fe797d6b5f416e16f6076/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225645.png">
+<meta property="og:image" content="https://p.sda1.dev/23/01e5e3a5b3907435602b26d9488cdc03/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225726.png">
+<meta property="og:image" content="https://p.sda1.dev/23/634cb8e133d13281f231039b485cf93a/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225738.png">
+<meta property="og:image" content="https://p.sda1.dev/23/9d3613e5c123f62b0008bea375f7401b/v2-6e8137641a380db542b195ec54b35550_1440w.png">
+<meta property="og:image" content="https://p.sda1.dev/23/634cb8e133d13281f231039b485cf93a/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-21%20225738.png">
+<meta property="article:published_time" content="2025-04-21T16:19:02.000Z">
+<meta property="article:modified_time" content="2025-04-21T16:26:17.173Z">
+<meta property="article:author" content="lokk233">
+<meta property="article:tag" content="模电">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p.sda1.dev/22/86831aa608b8ef67bd1870d853140157/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-13%20152405.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/cirno_logo.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="lokk233's blog" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">lokk233&#39;s blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            test
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/post/20250312131225.html">test</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            模电
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/post/20250422001857.html">模电前言</a></li>  <li class="file active"><a href="/post/20250422001902.html">模电第一章</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/post/20250312131026.html">Lokk233's Blog</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-模电第一章" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%A8%A1%E7%94%B5/" rel="tag">模电</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/post/20250422001902.html">
+            <time datetime="2025-04-21T16:19:02.000Z" itemprop="datePublished">2025-04-22</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            模电第一章
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%B8%B8%E7%94%A8%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">第一章 常用半导体器件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%BE%81%E5%8D%8A%E5%AF%BC%E4%BD%93"><span class="toc-number">1.1.</span> <span class="toc-text">1.1.1 本征半导体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%82%E8%B4%A8%E5%8D%8A%E5%AF%BC%E4%BD%93"><span class="toc-number">1.2.</span> <span class="toc-text">1.1.2 杂质半导体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pn%E7%BB%93"><span class="toc-number">1.3.</span> <span class="toc-text">1.1.3 PN结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%8C%E6%9E%81%E7%AE%A1"><span class="toc-number">1.4.</span> <span class="toc-text">1.2 半导体二极管</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A8%B3%E5%8E%8B%E4%BA%8C%E6%9E%81%E7%AE%A1"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.2.5 稳压二极管</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E6%9E%81%E6%99%B6%E4%BD%93%E7%AE%A1%E6%99%B6%E4%BD%93%E4%B8%89%E6%9E%81%E7%AE%A1bjt"><span class="toc-number">1.5.</span> <span class="toc-text">1.3 双极晶体管（晶体三极管）BJT</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8F%8A%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.5.1.</span> <span class="toc-text">1.3.1 结构及类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E6%B5%81%E6%94%BE%E5%A4%A7%E4%BD%9C%E7%94%A8"><span class="toc-number">1.5.2.</span> <span class="toc-text">1.3.2 电流放大作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bjt%E5%85%B1%E5%B0%84%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF"><span class="toc-number">1.5.3.</span> <span class="toc-text">1.3.3 BJT共射特性曲线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%8F%82%E6%95%B0"><span class="toc-number">1.5.4.</span> <span class="toc-text">1.3.4 主要参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%A9%E5%BA%A6%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">1.5.5.</span> <span class="toc-text">1.3.5 温度的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%89%E7%94%B5%E4%B8%89%E6%9E%81%E7%AE%A1"><span class="toc-number">1.5.6.</span> <span class="toc-text">1.3.6 光电三极管</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1-fet"><span class="toc-number">1.6.</span> <span class="toc-text">1.4 场效应管 （FET）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1"><span class="toc-number">1.6.1.</span> <span class="toc-text">1.4.1 结型场效应管</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E7%BC%98%E6%A0%85%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1-mosfetmos"><span class="toc-number">1.6.2.</span> <span class="toc-text">1.4.2 绝缘栅型场效应管
+（MOSFET（MOS））</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1-1"><span class="toc-number">1.6.3.</span> <span class="toc-text">1.4.1 结型场效应管</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E7%9A%84%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF%E4%B8%8E%E5%8F%82%E6%95%B0"><span class="toc-number">1.6.4.</span> <span class="toc-text">1.4.3 场效应管的特性曲线与参数</span></a></li></ol></li></ol></li></ol>
+                </div>
+            
+        
+        
+            <h1 id="第一章-常用半导体器件">第一章 常用半导体器件</h1>
+<h2 id="本征半导体">1.1.1 本征半导体</h2>
+<ul>
+<li><p>一、半导体:</p>
+<ul>
+<li><p>1.导电性能介于导体与绝缘体之间</p></li>
+<li><p>2.本征半导体：纯净的、具有晶体结构的半导体</p></li>
+</ul></li>
+<li><p>二、本征半导体的晶体结构
+<img src="https://p.sda1.dev/22/86831aa608b8ef67bd1870d853140157/屏幕截图 2025-03-13 152405.png" style="zoom:50%;"  ></p></li>
+<li><p>三、载流子</p>
+<ul>
+<li>1.本征激发：价带中的电子获得能量脱离共价键的束缚，进入导带成为导电子的过程；逃离，变成自由电子，留下空穴。</li>
+<li>2.自由电子</li>
+<li>3.空穴</li>
+<li>4.复合：与<strong>本征激发</strong>相反，自由电子与空穴结合</li>
+<li><strong>本征激发</strong>、<strong>复合</strong>的速率受温度影响，速率影响载流子的浓度。</li>
+</ul></li>
+<li><p>四、载流子浓度 （动态平衡）</p></li>
+</ul>
+<h2 id="杂质半导体">1.1.2 杂质半导体</h2>
+<ul>
+<li><p>一、概念：掺入<strong>少量</strong>的杂质元素</p></li>
+<li><p>二、N型半导体 <em>negative</em></p>
+<ul>
+<li><ol type="1">
+<li><p>掺入P（磷）（5价元素）多出1个自由电子， P为施主原子</p></li>
+<li><p>多子：多数载流子，N型中，自由电子为多子</p>
+<p>少子：少数载流子，N型中，空穴为少子</p>
+<p>温度对多子浓度影响不大，但对少子浓度影响大</p>
+<p><em>半导体器件中如果某个特性与少子有关，那么受温度影响就很大</em></p>
+<p><em>注：半导体本身不带电，因为正/负离子</em></p></li>
+</ol></li>
+</ul></li>
+<li><p>三、P型半导体</p>
+<ul>
+<li><ol type="1">
+<li><p>掺入 B （硼）（3价元素）</p>
+<p>......</p></li>
+</ol></li>
+</ul></li>
+</ul>
+<h2 id="pn结">1.1.3 PN结</h2>
+<ul>
+<li><p>P型与N型放在一起，形成PN结</p></li>
+<li><p>一、</p>
+<p><img src="https://p.sda1.dev/22/c599372a185aadef9398cbeeff110c38/屏幕截图 2025-03-13 154655.png" style="zoom: 67%;"  ></p>
+<ul>
+<li><ol type="1">
+<li><p>扩散运动（如图（a））</p></li>
+<li><p>空间电荷区：耗尽层，阻挡层，PN结</p></li>
+<li><p>漂移运动：P/N区的少子在空间电荷区形成电场的作用下被拉去对面</p>
+<pre><code> 在一定条件下，多子的扩散运动与少子的漂移运动就会达到动态平衡</code></pre></li>
+<li><p>对称结：空间电荷区两方宽度一样，即P、N两区掺杂浓度一样</p>
+<p>不对称结：浓度高的一方，窄；浓度低的一方，宽。</p></li>
+<li><p>势垒：人为抽象的，PN结形成的电场对于多子而言是阻碍的，因此称势垒。</p></li>
+</ol></li>
+</ul></li>
+<li><p><strong>二、PN结的单向导电性</strong></p>
+<ul>
+<li><ol type="1">
+<li><p>外加正向电压</p>
+<p>外向电压↑ 势垒↓
+；正向电压增大到<strong>一定程度</strong>才会有电流，这一程度之前的称为<strong>死区</strong></p>
+<p><img src="https://p.sda1.dev/22/a8c48a34ad5ff704b7ee5620a94dd01e/屏幕截图 2025-03-13 160045.png" style="zoom: 50%;" /></p>
+<p><em>R为限流电阻，限定通过的最大电流</em></p></li>
+<li><p>外加反向电压</p>
+<p>反向电压↑ 势垒↑ ；几乎不导电，所以从N到P时，是截止的；加强漂移运动；
+<span
+class="math inline">\(I_s\)</span>（反向饱和电流）对温度十分敏感</p>
+<p><img src="https://p.sda1.dev/22/1707c2e0bdc243ff966dc05668c0edce/屏幕截图 2025-03-13 160118.png" style="zoom: 50%;" /></p></li>
+</ol></li>
+</ul></li>
+<li><p><strong>三、PN结的电流方程</strong></p>
+<ul>
+<li><p><span class="math inline">\(i=I_s(e^{U/U_t} -1)\)</span> <span
+class="math inline">\(U\)</span> 为PN结上所加电压；室温下，<span
+class="math inline">\(U_t\)</span> = 26 mV</p>
+<p>导通电压：Ge管：0.2V - 0.3V</p>
+<pre><code>          Si管：0.6V - 0.7V </code></pre></li>
+<li><p>PN结伏安特性与下文二极管伏安特性几乎一致</p></li>
+</ul></li>
+<li><p><strong>四、PN结的伏安特性</strong>
+(<em>犯懒所以直接上图片</em>)</p>
+<ul>
+<li><img src="https://p.sda1.dev/22/238d10ccf9a7109e00ced5498ebfe7b9/AB244F1CB17C828591D3DD2AA40CB602.jpg" style="zoom: 25%;" /></li>
+</ul></li>
+</ul>
+<h2 id="半导体二极管">1.2 半导体二极管</h2>
+<p><img src="https://p.sda1.dev/22/90a817e45fc9c8805f39a60b21749814/2F39DBB04F26B457C9FD69623F5DCF25.jpg" style="zoom:25%;" /></p>
+<p><img src="https://p.sda1.dev/22/048b2424fbb24ab7fceec6fd31f6f405/AC52CDB4EAE0DAABF13923EAF7EB69A3.jpg" style="zoom:25%;" /></p>
+<p><img src="https://p.sda1.dev/22/0bcae203d72e0ca8fbe01c4e61ae36ea/2C4A99B4C0F06F07B6442ECA2261ADC8.jpg" style="zoom:25%;" /></p>
+<h3 id="稳压二极管">1.2.5 稳压二极管</h3>
+<pre><code>&lt;img src=&quot;https://p.sda1.dev/22/c91095683603d8f3710495e9014c659a/3B53F9B447ACF394D096432D2F1BF619.jpg&quot; style=&quot;zoom: 25%;&quot; /&gt;</code></pre>
+<p><img src="https://p.sda1.dev/23/774a08bc74c2ee848df50de7a59df567/屏幕截图 2025-04-09 133708.png" style="zoom:33%;"  ></p>
+<ul>
+<li><strong>三、主要参数</strong>
+<ul>
+<li><strong>α</strong> 温度系数:
+稳压管的温度变化，它的稳定电压也会发生微小变化。一般说来稳压值低于6V属于<strong>齐纳击穿</strong>，温度系数是负的(因为齐纳击穿中，温度越高，击穿所需的电压越小)；高于6V的属<strong>雪崩击穿</strong>，温度系数是正的。</li>
+<li><strong><span class="math inline">\(I_z\)</span></strong>
+最小稳定电流：为保证稳压管可靠击穿，所通过的电流最好大于<span
+class="math inline">\(I_z\)</span><br />
+</li>
+<li><span class="math inline">\(I_{zm}\)</span>
+最大稳定电流：为保证稳压管可靠击穿，所通过的电流最好小于<span
+class="math inline">\(I_{zm}\)</span><br />
+</li>
+<li><strong><span class="math inline">\(U_z\)</span></strong> (<span
+class="math inline">\(V_z\)</span>)稳定电压 :
+在稳压管正常工作情况下，稳压管两端电压降大小即为<span
+class="math inline">\(U_z\)</span><br />
+</li>
+</ul></li>
+<li><strong>电路分析</strong>
+<ul>
+<li>分析前需要先判断稳压二极管是否可靠击穿，一般可以先假设稳压管截止（不击穿）算出<span
+class="math inline">\(D_z\)</span>分得电压是否大于<span
+class="math inline">\(U_Z\)</span>。（下图算出<span
+class="math inline">\(U_o\)</span>即可知道<span
+class="math inline">\(D_z\)</span>所得电压）</li>
+</ul></li>
+</ul>
+<p><img src="https://p.sda1.dev/23/997a0ad430b4493c08a44af1b26fcfb0/屏幕截图 2025-04-09 131429.png" style="zoom: 33%;"  ></p>
+<pre><code>                                                        (更多相关例题课本p31)</code></pre>
+<h2 id="双极晶体管晶体三极管bjt">1.3 双极晶体管（晶体三极管）BJT</h2>
+<h3 id="结构及类型">1.3.1 结构及类型</h3>
+<ul>
+<li><strong>一、构成方式</strong>
+<ul>
+<li><img src="https://p.sda1.dev/23/1f908562f4b52dce567ff5a7f28f7cbd/屏幕截图 2025-04-19 150020.png" style="zoom:33%;"  ></li>
+</ul></li>
+<li><strong>二、结构</strong>
+<ul>
+<li>三个区域、三个电极、两个PN结（发射结、集电结）</li>
+<li><img src="https://p.sda1.dev/23/2a6b99ec0fe9c1ab5c4cd0d736d9091b/屏幕截图 2025-04-19 150045.png" style="zoom:33%;"  ></li>
+<li><strong>发射区e(emitter)</strong>：发射载流子的区域，因此掺杂浓度是所有区域当中<strong>最高</strong>的</li>
+<li><strong>集电区c(collector)</strong>：收集载流子的区域，相当于<em>仓库</em>，因此掺杂浓度不能过高，但集电区面积得大</li>
+<li><strong>基区b(base)</strong>：控制区</li>
+<li><strong>符号</strong>：见图(c)，箭头指向是P指向N，因此可通过箭头指向判断三极管是
+<em>NPN型</em> 还是 <em>PNP型</em></li>
+</ul></li>
+</ul>
+<h3 id="电流放大作用">1.3.2 电流放大作用</h3>
+<ul>
+<li><p><strong>一、放大</strong></p>
+<ul>
+<li><p>向三极管b输入电流<span class="math inline">\(I_b\)</span> ,
+一定条件下c和e通过电流<span class="math inline">\(I_c\)</span> ，<span
+class="math inline">\(I_c/I_b\)</span> 近似于一个常数(称为
+<em>β</em>)，也就是说 <span class="math inline">\(I_c\)</span> 是 <span
+class="math inline">\(I_b\)</span> 的放大。</p>
+<p>（<em>本质上就是小电流变化控制大电流变化罢大概</em>）</p>
+<p>当然，能量守恒，所以<span
+class="math inline">\(I_c\)</span>是通过三极管c极连接的电源而来，所以三极管实际上更像是一个控制元件，用于控制外部电源的功率。</p>
+<p>放大最基本要求：不能失真</p></li>
+</ul></li>
+<li><p><strong>二、基本共射放大电路</strong></p>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/39d72eb5999431c3446141c7482b0f73/屏幕截图 2025-04-19 154740.png" style="zoom:33%;"  ></p></li>
+<li><p>图中，<span
+class="math inline">\(R_b\)</span>作用：限流电阻，防止发射结两端电压过大导致正向导通击穿三极管。</p>
+<p><span class="math inline">\(V_{CC}\)</span> ：处于三极管ec之间，比
+<span class="math inline">\(V_{BB}\)</span>
+大，说明发射结在这时是正向导通的，称这种情况为<strong>正向偏置</strong></p></li>
+</ul>
+<p>​</p>
+<ul>
+<li><p><strong>正向偏置（正偏）</strong> <em>PN结导通</em></p></li>
+<li><p><strong>反向偏置（反偏）</strong> <em>PN结截止</em></p></li>
+<li><p>此图中，发射结正偏，集电结反偏
+（<em>因为N的电压比P的电压大，截止了</em>）</p>
+<p><span class="math inline">\(I_c\)</span>与<span
+class="math inline">\(I_b\)</span>成比例</p></li>
+</ul></li>
+<li><p><strong>三、晶体管内部载流子的运动</strong></p>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/549fdc66fbf527f4b8c3bdf769b9d2f0/屏幕截图 2025-04-19 154800.png" style="zoom:33%;"  ></p></li>
+<li><p><strong>1.发射结正偏</strong></p>
+<p>发射区的自由电子 扩散 至 基区 形成电流<span
+class="math inline">\(I_{EN}\)</span></p>
+<p>基区的空穴 扩散 至 发射区 形成电流<span
+class="math inline">\(I_{EP}\)</span></p>
+<p><em>因为正偏即向PN结外加正向电压，导致势垒降低，扩散运动加强，而发射区浓度高，所以发射区自由电子扩散至基区</em></p>
+<p><span class="math inline">\(I_{EN}\)</span> &gt;&gt; <span
+class="math inline">\(I_{EP}\)</span> ，<span
+class="math inline">\(I_{EN}\)</span> + <span
+class="math inline">\(I_{EP}\)</span> ≈ <span
+class="math inline">\(I_{EN}\)</span></p></li>
+<li><p><strong>2.基区</strong>(实现放大的关键)</p>
+<p>发射区自由电子扩散至基区后，基区非平衡少子（自由电子）过多并向集电结漂移。形成电流<span
+class="math inline">\(I_c\)</span></p>
+<p>当然，发射区自由电子到基区必然会与基区空穴复合，要保证发射区自由电子能够到达集电区，基区需要非常<strong>薄</strong>且<strong>掺杂浓度低</strong></p>
+<p>少部分自由电子与空穴复合，基区通过基极从<span
+class="math inline">\(V_{BB}\)</span> 补充空穴，因此形成<span
+class="math inline">\(I_b\)</span></p>
+<p>整个过程一直持续，<span class="math inline">\(I_c\)</span> 与 <span
+class="math inline">\(I_b\)</span> 逐渐成比例</p></li>
+<li><p><strong>3.集电区</strong></p>
+<p>要使发射区自由电子可以更加顺利地到达集电极，需要集电区反偏，这样即可通过漂移运动收集自由电子，从而达到效果。</p>
+<p>至此，整个正常工作的三极管就相当于一个导体。</p></li>
+<li><p><strong>4.放大系数</strong></p>
+<ul>
+<li><p>1<strong>.直流电流共射放大系数</strong>：<span
+class="math inline">\(\overline{β} = I_{CN}/I_{BN} =
+(I_C-I_{CBO})/(I_B+I_{CBO})≈I_C/I_B\)</span></p>
+<p>(<em><span class="math inline">\(I_{CN}\)</span> <span
+class="math inline">\(I_{BN}\)</span> 通过kcl得到</em>)</p>
+<p><strong>交流电流共射放大系数</strong>：<span
+class="math inline">\(β=\triangle I_C/\triangle I_B\)</span></p>
+<p>通常情况下 <span class="math inline">\(\overline{β}\)</span> 与 <span
+class="math inline">\(β\)</span> 数值接近</p></li>
+<li><p>2.<strong>穿透电流</strong> <span
+class="math inline">\(I_{CEO}\)</span> : <span
+class="math inline">\(I_B\)</span>为0时，理论上三极管不导通，但实际上还是有微小的电流穿过，即穿透电流<span
+class="math inline">\(I_{CEO}\)</span></p></li>
+<li><p>3.<strong>反向电流</strong> <span
+class="math inline">\(I_{CBO}\)</span>：集电结加反向电压时平衡少子的漂移运动形成的</p></li>
+<li><p>4.<strong>直流电流共基放大系数</strong>：$ ≈ I_C/I_E = /(1+)
+$</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="bjt共射特性曲线">1.3.3 BJT共射特性曲线</h3>
+<ul>
+<li><p><strong>一、输入特性</strong></p>
+<ul>
+<li><p>即 <span class="math inline">\(i_B\)</span> 与 <span
+class="math inline">\(u_{BE}\)</span> 之间的关系。</p></li>
+<li><p>考虑到正常工作的三极管还有<span
+class="math inline">\(u_{CE}\)</span> ，所以要研究 <span
+class="math inline">\(i_B\)</span> 与 <span
+class="math inline">\(u_{BE}\)</span> 之间的关系，需将<span
+class="math inline">\(U_{CE}\)</span> = 常数</p></li>
+<li><p>$i_B = f(u_{BE})|<em>{U</em>{CE} = 常数} $</p></li>
+<li><p><img src="https://p.sda1.dev/23/1333ebb2c778f8c452ea617cf18354f2/屏幕截图 2025-04-20 152349.png" ></p></li>
+<li><p>由图可见，<span
+class="math inline">\(U_{CE}\)</span>越大，曲线向右移动，但<span
+class="math inline">\(U_{CE}\)</span>&gt;=1V时，曲线基本不会再向右移动了，即<span
+class="math inline">\(U_{CE}\)</span>&gt;=1V的曲线基本重合。</p>
+<p>（<em>因为集电结反偏，<span
+class="math inline">\(U_{CE}\)</span>增大漂移运动增大，<span
+class="math inline">\(i_B\)</span>电流减小，要获得同样的<span
+class="math inline">\(i_B\)</span>电流，<span
+class="math inline">\(u_{BE}\)</span>要增大，<span
+class="math inline">\(U_{CE}\)</span>大于1V后，漂移运动动态稳定，<span
+class="math inline">\(u_{BE}\)</span>不变</em>）</p></li>
+<li><p><em>曲线簇</em></p></li>
+</ul></li>
+<li><p><strong>二、输出特性</strong></p>
+<ul>
+<li><p>即 <span class="math inline">\(i_B\)</span> 与 <span
+class="math inline">\(u_{BE}\)</span> 之间的关系。</p></li>
+<li><p>$i_C = f(u_{CE})|_{i_B = 常数} $</p></li>
+<li><p><img src="https://p.sda1.dev/23/e1869cfedd4fa617eb67973b6c43c907/屏幕截图 2025-04-20 163935.png" style="zoom:80%;"  ></p></li>
+<li><p>集电结正偏，晶体管处于饱和状态，集电结反偏，晶体管处于放大状态</p></li>
+<li><p><span class="math inline">\(U_{CE}\)</span> &gt;
+曲线拐点处，说明集电结已经反偏了，此情况下，只要<span
+class="math inline">\(i_B\)</span>不变，<span
+class="math inline">\(i_C\)</span>就是一个固定值</p></li>
+<li><p><strong>放大状态下</strong><span
+class="math inline">\(i_C\)</span>与<span
+class="math inline">\(i_B\)</span>成比例</p></li>
+<li><p><em>曲线簇</em></p></li>
+<li><p><span class="math inline">\(i_B\)</span> =
+0时，仍有微小的电流，此电流即为<span
+class="math inline">\(I_{CEO}\)</span> （穿透电流），<span
+class="math inline">\(I_{CEO}\)</span> 越小，截止越接近理想</p></li>
+<li><p><strong>饱和区</strong>中，<span
+class="math inline">\(i_C\)</span>与<span
+class="math inline">\(i_B\)</span>不成比例，说明<span
+class="math inline">\(i_C\)</span>不受<span
+class="math inline">\(i_B\)</span>控制；<span
+class="math inline">\(U_{CE}\)</span>非常小，导致集电结正偏
+；集电结与发射结都为正偏，此时<span
+class="math inline">\(U_{CE}\)</span>很小(<em>基本上为管压降，称之为饱和电压<span
+class="math inline">\(U_{CES}\)</span></em>)；</p>
+<p>从外电路看，<span class="math inline">\(i_C\)</span>随<span
+class="math inline">\(i_B\)</span>增大，随后停留在一个固定值，（<em>因为正偏的时候，上下二极管都正偏，压降抵消，从外电路看就UCE等于0，此时你Ib无论怎么增大，VCE都为0，即饱和</em>）</p>
+<p><span class="math inline">\(i_C =
+(V_{CC}-U_{CE})/R_C\)</span></p></li>
+<li><p><strong>1.放大区</strong>：<span class="math inline">\(i_C =
+βi_B\)</span></p></li>
+<li><p><strong>2.截止区</strong>：双结反偏（<em>主要是发射结反偏</em>），ce断路，相当于开关打开，即基极电位小于发射极电位，即可控制晶体管处于截止区</p></li>
+<li><p><strong>3.饱和区</strong>：双结正偏 ，饱和电压<span
+class="math inline">\(U_{CES}\)</span>(<em>即<span
+class="math inline">\(U_{CE}\)</span>
+的最小值</em>)，ce两个电极之间相当于开关闭合（<em>导线</em>），此时<span
+class="math inline">\(\overline{β}i_B &gt; i_{CMAX}\)</span></p>
+<p>(<em><span class="math inline">\(i_{CMAX} =
+(V_{CC}-U_{CES})/R_C\)</span></em>)</p>
+<p>所以若要判断晶体管工作状态，可以算出<span
+class="math inline">\(i_B\)</span> (*$i_B =(V_{BB}-U_{BE})/R_B <span
+class="math inline">\(*  ) 然后比较\)</span>i_B$ 与 <span
+class="math inline">\(i_{CMAX}\)</span>
+之间的大小，大于即为饱和区，小于即为放大区，发射结反偏即为截止区。</p>
+<p>由输出特性可知，可通过控制<span
+class="math inline">\(i_B\)</span>大小使晶体管可以在饱和区与截止区之间来回跳变，起到电子开关的作用，于是可用晶体管控制电路</p>
+<p>三极管最也多用于放大</p></li>
+</ul></li>
+</ul>
+<h3 id="主要参数">1.3.4 主要参数</h3>
+<ul>
+<li><p>上文所写过的参数，譬如<span
+class="math inline">\(\overline{β}\)</span>、<span
+class="math inline">\(\overline
+{α}\)</span>等，此外还有<strong>极限参数</strong>，器件的选择需注意<strong>极限参数</strong></p></li>
+<li><p><img src="https://p.sda1.dev/23/8d87d5ffa8cc3edd7aa049eed566a3de/屏幕截图 2025-04-20 220114.png" title="晶体管的极限参数" style="zoom:67%;" /></p>
+<p>详细可看书本p62以及↓</p>
+<p>https://zhuanlan.zhihu.com/p/512964000</p></li>
+</ul>
+<h3 id="温度的影响">1.3.5 温度的影响</h3>
+<ul>
+<li><strong>一、输入特性</strong>
+<ul>
+<li>温度对晶体管输入特性的影响</li>
+<li><img src="https://p.sda1.dev/23/da7e200cbb877560779be54d5e52f3a4/屏幕截图 2025-04-20 221158.png" style="zoom: 50%;" /></li>
+<li>温度升高，曲线左移。也就是说，在相同的<span
+class="math inline">\(i_B\)</span>下，温度升高，发射结的正向压降降低。（<em>每升高1℃，压降降低2-2.5mV</em>）</li>
+</ul></li>
+<li><strong>二、输出特性</strong>
+<ul>
+<li>温度对晶体管输出特性的影响</li>
+<li><img src="https://p.sda1.dev/23/30753b08cd784b4e8157ce445f017806/屏幕截图 2025-04-20 222601.png" style="zoom:50%;" /></li>
+</ul></li>
+</ul>
+<h3 id="光电三极管">1.3.6 光电三极管</h3>
+<ul>
+<li><img src="https://p.sda1.dev/23/5504e959cc8878f54fa33c6ef2f8083d/屏幕截图 2025-04-20 222856.png" style="zoom: 67%;" /></li>
+</ul>
+<h2 id="场效应管-fet">1.4 场效应管 （FET）</h2>
+<h3 id="结型场效应管">1.4.1 结型场效应管</h3>
+<p>（<em>建议先学习1.4.2</em>）</p>
+<h3 id="绝缘栅型场效应管-mosfetmos">1.4.2 绝缘栅型场效应管
+（MOSFET<em>（MOS）</em>）</h3>
+<ul>
+<li><p><strong>一、N沟道增强型MOS管</strong></p>
+<ul>
+<li><p><strong>1.结构</strong></p>
+<p><img src="https://p.sda1.dev/23/8a88d3c16c586bf8482ffa234d03b06e/屏幕截图 2025-04-21 152918.png" style="zoom: 50%;"  ></p></li>
+<li><p>g栅极，s源极，d漏极（<em>分别对应晶体管b, e, c</em>）</p></li>
+<li><p>由于g被二氧化硅包围所以绝缘</p></li>
+<li><p><strong>2.工作原理</strong></p></li>
+<li><p>对应晶体管c与e之间产生电流，MOS管d与s之间也应产生电流，然而由图可知，s与d之间存在两个PN结以及P（衬底），导致s的自由电子难以到达d，需要在s与d之间形成一个供自由电子通过的<strong>沟道</strong></p></li>
+<li><p><img src="https://p.sda1.dev/23/8de5f1cff069ae5296dc673e481a2e10/屏幕截图 2025-04-21 152937.png" style="zoom: 33%;"  ></p>
+<ul>
+<li><p>1.<span class="math inline">\(u_{DS} = 0\)</span> , <span
+class="math inline">\(u_{GS}&gt;0\)</span></p>
+<p>由图（a）可知，<span
+class="math inline">\(u_{GS}\)</span>刚上升时，形成由g到B的电场，将上方的空穴推至B，形成几乎没有载流子的PN结（耗尽层），</p>
+<p>继续增大<span
+class="math inline">\(u_{GS}\)</span>，不仅将空穴推至B，还将P中的少子（自由电子）吸引至g，情况变为图（b）所示，构成反型层（即沟道），使得N与N之间导通了。此沟道中，多子为自由电子，因此得名N沟道。</p>
+<p><span class="math inline">\(u_{GS}\)</span>越高，沟道越宽；<span
+class="math inline">\(u_{GS}\)</span>越低，沟道越窄；沟道宽窄决定d与s之间的电阻大小，所以此时MOS管相当于<strong>可用电压控制的可变电阻器</strong></p>
+<p>即<span class="math inline">\(u_{GS}\)</span>控制<span
+class="math inline">\(R_{DS}\)</span></p>
+<p>在d与s施加电压，自然形成电流<span
+class="math inline">\(i_D\)</span></p></li>
+<li><p>2.要形成沟道，需要一定大小的<span
+class="math inline">\(u_{GS}\)</span>，因此由开启电压<span
+class="math inline">\(u_{GS(th)}\)</span></p>
+<p><span class="math inline">\(u_{GS} &gt; u_{GS(th)}\)</span>
+并保持不变，<span
+class="math inline">\(u_{DS}\)</span>不等于0且持续上升</p>
+<p><img src="https://p.sda1.dev/23/e2fec0a7f36e1bbdbc44f7c3e24b46c9/屏幕截图 2025-04-21 153028.png" style="zoom: 50%;"  ></p>
+<ul>
+<li>图（a）：<span class="math inline">\(u_{GS}\)</span>不变，<span
+class="math inline">\(u_{DS}\)</span>持续上升，沟道d侧变窄，而沟道s侧宽度不变，说明<span
+class="math inline">\(u_{GS}\)</span>实际是沟道s侧上下两点的电压差;</li>
+</ul>
+<p>而沟道d侧上下两点电压差为<span class="math inline">\(u_{GS} -
+u_{DS}\)</span></p>
+<p>在沟道尚未封闭前（即图（a）），阻值基本不变，<span
+class="math inline">\(i_D\)</span>随<span
+class="math inline">\(u_{DS}\)</span>增大而上升</p>
+<ul>
+<li><p>图（b）：<span class="math inline">\(u_{GS} - u_{DS} =
+u_{GS(th)}\)</span>，出现<strong>预夹断</strong></p>
+<p>并非真正夹断，一旦断了，沟道没电流没压降，<span
+class="math inline">\(u_{GS}\)</span>再次将其打开一个很小的缝隙，可见这是一个自动的平衡状态</p></li>
+<li><p>图（c）：<span
+class="math inline">\(u_{DS}\)</span>继续上升，空隙越长，电阻<span
+class="math inline">\(R_{DS}\)</span>越大，导致<span
+class="math inline">\(i_{DS}\)</span>几乎不变，相当于恒流（<em>增加的电压都用于抵抗电阻</em>）</p>
+<p>说明恒流区中，<span class="math inline">\(i_D\)</span>只受<span
+class="math inline">\(u_{GS}\)</span>影响</p>
+<p>说明恒流区中，栅极与源极之间的电压<span
+class="math inline">\(u_{GS}\)</span>可以控制<span
+class="math inline">\(i_D\)</span>，即<span
+class="math inline">\(i_D\)</span>与<span
+class="math inline">\(u_{GS}\)</span>成比例，处于恒流区的MOS管可用于放大</p>
+<p><img src="https://p.sda1.dev/23/0828898a04cbc3426a05b93ee1cc1d71/屏幕截图 2025-04-21 153542.png" style="zoom: 50%;"  ></p>
+<p>预夹断前，相当于可变电阻</p>
+<p>预夹断后，进入恒流区，相当于放大</p></li>
+</ul></li>
+</ul></li>
+<li><p>符号：通过箭头方向判断其为N沟道还是P沟道，（与之前一样，箭头由P指向N）</p></li>
+<li><p>“增强”含义：说明d、s天生不可通（无沟道）需要增强<span
+class="math inline">\(u_{GS}\)</span>电压</p></li>
+<li><p>要使MOS管d、s天生导通（有沟道），可见下方另一种MOS管</p></li>
+</ul></li>
+<li><p><strong>二、N沟道耗尽型MOS管</strong></p>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/0448e580572df6f13c4960a20f1dbfe3/屏幕截图 2025-04-21 153657.png" style="zoom: 50%;"  ></p></li>
+<li><p><em>在g的下方增加了正极板</em></p></li>
+<li><p><span
+class="math inline">\(U_{GS(off)}\)</span>夹断电压，只要<span
+class="math inline">\(U_GS\)</span> &gt;<span
+class="math inline">\(U_{GS(off)}\)</span>，MOS管正常工作（导通）</p></li>
+<li><p>符号见图上（b）</p></li>
+</ul></li>
+</ul>
+<h3 id="结型场效应管-1">1.4.1 结型场效应管</h3>
+<ul>
+<li><p><strong>一、结构</strong></p>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/4c70088257c579323069ce85a690078e/屏幕截图 2025-04-21 225512.png" style="zoom: 33%;" /></p></li>
+<li><p>一大块N上下掺杂高浓度的P</p></li>
+<li><p>换个视角↓</p></li>
+<li><p><img src="https://p.sda1.dev/23/2dce55406227360d4aebb451302d8249/屏幕截图 2025-04-21 225532.png" style="zoom:33%;" /></p></li>
+<li><p>图中两个P区连接在一起，连接g极（栅极），栅极控制着两个P，P与N之间形成PN结，</p>
+<p>若栅极源极（gs）之间0电压，此时结型场效应管相当于N沟道耗尽型MOS管，d与s之间天生存在沟道</p>
+<p>要控制该管，需在g和s之间加负值的电压<span
+class="math inline">\(u_{GS}\)</span>，使PN结反偏，PN结变宽</p></li>
+<li><p><img src="https://p.sda1.dev/23/8f8673421cc95f5af3b758b3d3ee20ad/屏幕截图 2025-04-21 225621.png" style="zoom: 50%;" /></p></li>
+<li><p><span
+class="math inline">\(u_{GS}\)</span>加到底导致沟道夹断（<em>真夹断，如图（c）所示</em>），此时不导电（截止）</p></li>
+<li><p>如何工作？</p></li>
+<li><p><img src="https://p.sda1.dev/23/2724b01855c4a2bbfe9bc1935c210a04/屏幕截图 2025-04-21 225611.png" style="zoom:50%;" /></p></li>
+<li><p><span
+class="math inline">\(u_{DS}\)</span>越大，上方（d侧）PN结越厚，最后出现预夹断；与MOSFET类似，在预夹断前，存在固定的电阻</p></li>
+<li><p>预夹断前，<span
+class="math inline">\(u_{GS}\)</span>不变，电阻不变。当<span
+class="math inline">\(u_{GS}\)</span>固定，<span
+class="math inline">\(u_{DS}\)</span>与<span
+class="math inline">\(i_D\)</span>之间成正比</p></li>
+<li><p>预夹断后，<span
+class="math inline">\(i_D\)</span>不变，恒流，此时<span
+class="math inline">\(i_D\)</span>只和<span
+class="math inline">\(u_{GS}\)</span>有关</p></li>
+<li><p><span class="math inline">\(u_{GS} &gt;
+0\)</span>会导致PN结正偏，发生PN结导通，<strong>导致短路</strong></p></li>
+<li><p>与MOS管区别：</p>
+<ul>
+<li>1.结型场效应管PN结仍有微小的反偏的漏电流，但MOS管是绝缘栅，基本无电流，即输入电阻没有MOS的高</li>
+<li>2.<strong>结型场效应管不能工作在<span class="math inline">\(u_{GS}
+&gt; 0\)</span>的状态下</strong></li>
+<li>优点：不容易损坏，而MOS管电容小（<span class="math inline">\(Q/C =
+U\)</span>），只要存在一点电荷就有可能产生电压，形成足以击穿MOS管的电场。</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="场效应管的特性曲线与参数">1.4.3 场效应管的特性曲线与参数</h3>
+<ul>
+<li><p><strong>一、特性曲线</strong></p>
+<ul>
+<li><p>1.转移特性曲线(图a)（<em>输入特性曲线</em>）</p></li>
+<li><p><img src="https://p.sda1.dev/23/ad09a0c3112fe797d6b5f416e16f6076/屏幕截图 2025-04-21 225645.png" style="zoom:50%;" /></p></li>
+<li><p>转移特性说明: <span
+class="math inline">\(u_{GS}\)</span>控制<span
+class="math inline">\(i_D\)</span></p></li>
+<li><p>图（a）曲线出现条件：MOS一定工作在恒流区，即<span
+class="math inline">\(u_{DS}\)</span>需足够大（<em>不在恒流区的话，<span
+class="math inline">\(i_D\)</span></em>受到<span
+class="math inline">\(u_{GS}\)</span>和<span
+class="math inline">\(u_{DS}\)</span>影响）</p></li>
+<li><p>电流方程：<span class="math inline">\(i_D =
+I_{DO}(u_{GS}/u_{GS(th)} - 1)^2\)</span></p></li>
+<li><p>耗尽型的为曲线左移（<em>见后图汇总</em>）</p></li>
+<li><p>2.输出特性曲线</p></li>
+<li><p>三极管工作思路：小信号输入控制<span
+class="math inline">\(i_B\)</span>，<span
+class="math inline">\(i_B\)</span>通过放大状态下的三极管控制<span
+class="math inline">\(i_C\)</span>，实质上是通过<span
+class="math inline">\(i_B\)</span>控制外部的直流电源的功率输出</p></li>
+<li><p>场效应管工作思路：先让场效应管工作在恒流区，通过<span
+class="math inline">\(u_{GS}\)</span>的变化控制<span
+class="math inline">\(i_D\)</span>的变化，<span
+class="math inline">\(i_D\)</span>被放大，再将<span
+class="math inline">\(i_D\)</span>输出</p></li>
+<li><p>场效应管的输出特性曲线见上图(b)</p></li>
+<li><p>结型场效应管的输出特性</p></li>
+<li><p><img src="https://p.sda1.dev/23/01e5e3a5b3907435602b26d9488cdc03/屏幕截图 2025-04-21 225726.png" style="zoom:50%;" /></p></li>
+<li><p>结型场效应管的转移特性</p></li>
+<li><p><img src="https://p.sda1.dev/23/634cb8e133d13281f231039b485cf93a/屏幕截图 2025-04-21 225738.png" style="zoom:50%;" /></p></li>
+</ul></li>
+<li><p><strong>场效应管的符号及特性</strong></p>
+<ul>
+<li><img src="https://p.sda1.dev/23/9d3613e5c123f62b0008bea375f7401b/v2-6e8137641a380db542b195ec54b35550_1440w.png" style="zoom: 80%;" /></li>
+</ul></li>
+<li><p><strong>二、参数</strong></p>
+<ul>
+<li><p>1.直流参数</p>
+<ul>
+<li><span class="math inline">\(U_{GS(th)}\)</span>
+(<em>增强型</em>)</li>
+<li><span class="math inline">\(U_{GS(off)}\)</span>
+(<em>耗尽型、结型</em>)</li>
+<li><span class="math inline">\(I_{DSS}\)</span>
+(<em>耗尽型、结型</em>)</li>
+<li>直流输入电阻 <span class="math inline">\(R_{GS(DC)}\)</span></li>
+</ul></li>
+<li><p>2.交流参数</p>
+<ul>
+<li><p>1.跨导（低频）<span class="math inline">\(g_m  = \Delta i_D /
+\Delta u_{GS}|_{u_{DS} = 常数}\)</span> （<span
+class="math inline">\(g_m\)</span>为电导，即为某一点切线的斜率）</p>
+<p><img src="https://p.sda1.dev/23/634cb8e133d13281f231039b485cf93a/屏幕截图 2025-04-21 225738.png" style="zoom:50%;" /></p>
+<p>分析二极管时，小信号一定是在静态的某一点上进行振荡，若想知道小交流型号之间的关系，只用知道某一静态点上的斜率即可。（<em>这便是分析动态值的思路</em>）</p>
+<p>跨导值越大，意味着可以用更小的栅源电压控制漏极电流发生更大的变化，意味着放大作用更大。</p></li>
+<li><p>2.极间电容</p>
+<p>高频可能导通</p></li>
+</ul></li>
+<li><p>极限参数</p></li>
+<li><p>https://zhuanlan.zhihu.com/p/546243422</p></li>
+</ul></li>
+</ul>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+    
+        <a href="/post/20250422001857.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">模电前言</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            lokk233 &copy; 2025 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
