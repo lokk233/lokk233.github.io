@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>模电第二章 | lokk233&#39;s blog</title>
+    
+    
+        <meta name="keywords" content="模电" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="第二章 基本放大电路 2-1 放大电路的构成 2.1.1 放大的概念    一、特征  功率放大 放大指的是将功率放大，输入小功率信号经过放大电路输出大功率信号，由P&#x3D;UI可知，可通过放大电压或放大电流等方式达到放大功率的效果  二、本质  能量的控制以及转换（大功率信号的能量来源于放大电路中外接电源）  三、必要条件（核心器件）  有源元件（即能量控制元件，如三">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模电第二章">
+<meta property="og:url" content="http://example.com/post/20250422223059.html">
+<meta property="og:site_name" content="lokk233&#39;s blog">
+<meta property="og:description" content="第二章 基本放大电路 2-1 放大电路的构成 2.1.1 放大的概念    一、特征  功率放大 放大指的是将功率放大，输入小功率信号经过放大电路输出大功率信号，由P&#x3D;UI可知，可通过放大电压或放大电流等方式达到放大功率的效果  二、本质  能量的控制以及转换（大功率信号的能量来源于放大电路中外接电源）  三、必要条件（核心器件）  有源元件（即能量控制元件，如三">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://p.sda1.dev/23/796ca53c090f9feb98963c0d3751bbf2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20133331.png">
+<meta property="og:image" content="https://p.sda1.dev/23/4d7c9230e6a2baf89d0deab94d351e21/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20154156.png">
+<meta property="og:image" content="https://p.sda1.dev/23/79633cca9294b9c34e329c666d15ae3e/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20154352.png">
+<meta property="og:image" content="https://p.sda1.dev/23/8f7a1216f8153c42cacfe33428668842/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20155609.png">
+<meta property="og:image" content="https://p.sda1.dev/23/6794f5fad86cfd4590fe016ba2ad39ac/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20155938.png">
+<meta property="og:image" content="https://p.sda1.dev/23/1ad6ffa7693e23928be1fbcb8652d265/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20160838.png">
+<meta property="og:image" content="https://p.sda1.dev/23/dc018f58722f304363465fbfcaaebd24/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20161614.png">
+<meta property="og:image" content="https://p.sda1.dev/23/8f7a1216f8153c42cacfe33428668842/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20155609.png">
+<meta property="og:image" content="https://p.sda1.dev/23/3ad91abe347290d3abd651eb1512888f/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20162948.png">
+<meta property="og:image" content="https://p.sda1.dev/23/983046351da4cb29313a21b625c7b512/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20163348.png">
+<meta property="og:image" content="https://p.sda1.dev/23/58049dac6e943a42a2388bff8ffe9e4f/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20164239.png">
+<meta property="og:image" content="https://p.sda1.dev/23/0586d7bb5d7e41a6700e8c963155aa5d/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20164926.png">
+<meta property="og:image" content="https://p.sda1.dev/23/0cc81261f5612c396bd78f3d4d8eee5e/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20190601.png">
+<meta property="og:image" content="https://p.sda1.dev/23/1d6fc932af15e6f38f7c9a792825e8c3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20191301.png">
+<meta property="og:image" content="https://p.sda1.dev/23/692722ace8012b77d7b28bc3c06ca3c1/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20192351.png">
+<meta property="og:image" content="https://p.sda1.dev/23/808c3ee481aa95269d5aba5662cefd3c/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20194833.png">
+<meta property="og:image" content="https://p.sda1.dev/23/ba6816f677050e2463d806345b074630/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20200355.png">
+<meta property="og:image" content="https://p.sda1.dev/23/abb033630793a77aabf37fff25feaea2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20211012.png">
+<meta property="article:published_time" content="2025-04-22T14:30:59.000Z">
+<meta property="article:modified_time" content="2025-04-22T14:34:40.307Z">
+<meta property="article:author" content="lokk233">
+<meta property="article:tag" content="模电">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p.sda1.dev/23/796ca53c090f9feb98963c0d3751bbf2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-22%20133331.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/cirno_logo.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="lokk233's blog" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">lokk233&#39;s blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            test
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/post/20250312131225.html">test</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            模电
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/post/20250422001857.html">模电前言</a></li>  <li class="file"><a href="/post/20250422001902.html">模电第一章</a></li>  <li class="file active"><a href="/post/20250422223059.html">模电第二章</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/post/20250312131026.html">Lokk233's Blog</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-模电第二章" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%A8%A1%E7%94%B5/" rel="tag">模电</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/post/20250422223059.html">
+            <time datetime="2025-04-22T14:30:59.000Z" itemprop="datePublished">2025-04-22</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            模电第二章
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E6%94%BE%E5%A4%A7%E7%94%B5%E8%B7%AF"><span class="toc-number">1.</span> <span class="toc-text">第二章 基本放大电路</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%BE%E5%A4%A7%E7%94%B5%E8%B7%AF%E7%9A%84%E6%9E%84%E6%88%90"><span class="toc-number">1.1.</span> <span class="toc-text">2-1 放大电路的构成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%BE%E5%A4%A7%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.</span> <span class="toc-text">2.1.1 放大的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%8E%E6%A0%B7%E6%9E%84%E5%BB%BA%E5%9F%BA%E6%9C%AC%E6%94%BE%E5%A4%A7%E7%94%B5%E8%B7%AF"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.1.2 怎样构建基本放大电路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-number">1.2.</span> <span class="toc-text">2-2 性能指标</span></a></li></ol></li></ol>
+                </div>
+            
+        
+        
+            <h1 id="第二章-基本放大电路">第二章 基本放大电路</h1>
+<h2 id="放大电路的构成">2-1 放大电路的构成</h2>
+<h3 id="放大的概念">2.1.1 放大的概念</h3>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/796ca53c090f9feb98963c0d3751bbf2/屏幕截图 2025-04-22 133331.png" style="zoom:33%;" /></p></li>
+<li></li>
+<li><p><strong>一、特征</strong></p>
+<ul>
+<li><p>功率放大</p>
+<p>放大指的是将功率放大，输入小功率信号经过放大电路输出大功率信号，由P=UI可知，可通过放大电压或放大电流等方式达到放大功率的效果</p></li>
+</ul></li>
+<li><p><strong>二、本质</strong></p>
+<ul>
+<li>能量的控制以及转换（<em>大功率信号的能量来源于放大电路中外接电源</em>）</li>
+</ul></li>
+<li><p><strong>三、必要条件（核心器件）</strong></p>
+<ul>
+<li><p>有源元件（<em>即能量控制元件，如三极管、场效应管等</em>）</p>
+<p>该器件的能量由外部电源提供</p>
+<p>通过小信号的输入控制输出的一个大信号，实现输出与输入成比例，可控。</p></li>
+</ul></li>
+<li><p><strong>四、前提</strong></p>
+<ul>
+<li><strong>不失真（保真）</strong></li>
+</ul></li>
+<li><p><strong>五、测试信号</strong></p>
+<ul>
+<li>正弦波 （因为各种复杂信号都可视为各种频率的正弦波的叠加）</li>
+<li>如何确定保真——通过一系列测试信号测试</li>
+</ul></li>
+</ul>
+<h3 id="怎样构建基本放大电路">2.1.2 怎样构建基本放大电路</h3>
+<ul>
+<li><p><strong>一、目标</strong>：小功率信号 -&gt; 大功率信号</p></li>
+<li><p><strong>二、条件</strong>：1.元件（有源元件）2.能量（电源）</p></li>
+<li><p><strong>三、技术路线</strong>：</p>
+<ul>
+<li><p>1.使三极管工作在放大状态下，此时<span
+class="math inline">\(i_B\)</span>可以控制<span
+class="math inline">\(i_C\)</span></p></li>
+<li><p>2.使小信号控制<span class="math inline">\(i_B\)</span>(<span
+class="math inline">\(u_{BE}\)</span>​)</p>
+<ul>
+<li>通常会加直流电源将小信号电压推至可以开启三极管的电压（<em>发射结正偏</em>）</li>
+<li>加限流电阻<span
+class="math inline">\(R_B\)</span>保护电路和三极管</li>
+<li>实际上就是<span
+class="math inline">\(i_B\)</span>​控制ec间电源输出多大功率的电流</li>
+<li><img src="https://p.sda1.dev/23/4d7c9230e6a2baf89d0deab94d351e21/屏幕截图 2025-04-22 154156.png" style="zoom: 67%;" /></li>
+</ul></li>
+<li><p>3.合理的输出</p>
+<p>如何输出？</p>
+<ul>
+<li>如下图，连接负载<span
+class="math inline">\(R_L\)</span>，可以看到，负载电压为<span
+class="math inline">\(E_C\)</span>，流过负载的电流仍是一个直流电流。</li>
+<li><img src="https://p.sda1.dev/23/79633cca9294b9c34e329c666d15ae3e/屏幕截图 2025-04-22 154352.png" style="zoom: 67%;" /></li>
+<li>要想让交流电流<span
+class="math inline">\(i_C\)</span>流过负载：</li>
+<li>1.可使负载直接连接至三极管d极所在支路；</li>
+<li>2.将交流电流变成电压信号输出</li>
+<li>使交流电流流经一个电阻，即可取出信号，见下图</li>
+<li><img src="https://p.sda1.dev/23/8f7a1216f8153c42cacfe33428668842/屏幕截图 2025-04-22 155609.png" style="zoom: 67%;" /></li>
+<li>如图添加<span class="math inline">\(R_C\)</span>后，<span
+class="math inline">\(R_C\)</span>的压降即为电压信号，此时负载<span
+class="math inline">\(R_L\)</span>的电压即为<span
+class="math inline">\(E_C - i_CR_C\)</span>​</li>
+<li>基本共射放大电路便是这样而来↓</li>
+<li>(<em>学习或分析电路时，可以试着一步步构建相同的电路，以此了解各个器件在此电路的用处</em>)</li>
+<li><img src="https://p.sda1.dev/23/6794f5fad86cfd4590fe016ba2ad39ac/屏幕截图 2025-04-22 155938.png" style="zoom:50%;" /></li>
+<li><img src="https://p.sda1.dev/23/1ad6ffa7693e23928be1fbcb8652d265/屏幕截图 2025-04-22 160838.png" style="zoom: 50%;" /></li>
+<li>无直流电源，无法启动三极管，无<span
+class="math inline">\(i_B\)</span>产生，那么基本共射放大电路是无法使用的↓</li>
+<li><img src="https://p.sda1.dev/23/dc018f58722f304363465fbfcaaebd24/屏幕截图 2025-04-22 161614.png" style="zoom: 50%;" /></li>
+</ul></li>
+</ul></li>
+<li><p><strong>四、放大电路</strong></p>
+<ul>
+<li><p>1.直接耦合</p>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/8f7a1216f8153c42cacfe33428668842/屏幕截图 2025-04-22 155609.png" style="zoom: 67%;" /></p></li>
+<li><p>由该图可以看到，电源，此电路一口气用了两个！实际臃肿！</p>
+<p>因此，有无办法只用一个电源？——可</p>
+<p>只要保证集电结反偏（<em>即b极电位小于c极电位</em>）即可</p>
+<p><img src="https://p.sda1.dev/23/3ad91abe347290d3abd651eb1512888f/屏幕截图 2025-04-22 162948.png" style="zoom: 50%;" /></p>
+<p>但是，如果直接将交流信号加至<span
+class="math inline">\(R_B\)</span>所在支路，会出现交流信号因没接地而出现受干扰的情况</p>
+<p>所以↓</p>
+<p><img src="https://p.sda1.dev/23/983046351da4cb29313a21b625c7b512/屏幕截图 2025-04-22 163348.png" style="zoom:50%;" /></p>
+<p>但是，这样的电路，<span
+class="math inline">\(u_{BE}\)</span>实际<span
+class="math inline">\(u_i\)</span>，不足以使发射结正偏，<span
+class="math inline">\(i_B\)</span>不会流入三极管反而会直驱左路进入小信号。</p>
+<p>所以↓</p>
+<p><img src="https://p.sda1.dev/23/58049dac6e943a42a2388bff8ffe9e4f/屏幕截图 2025-04-22 164239.png" style="zoom: 50%;" /></p>
+<p>添加一个电阻，此时由<a
+target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E5%8F%A0%E5%8A%A0%E5%AE%9A%E7%90%86_(%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90)">叠加定理</a>可知b极的电位变为交直流叠加的电位</p>
+<p>化简一下电路，直接耦合共射放大电路由此而来↓</p>
+<p><img src="https://p.sda1.dev/23/0586d7bb5d7e41a6700e8c963155aa5d/屏幕截图 2025-04-22 164926.png" style="zoom: 50%;" /></p>
+<p>耦合：信号在电路之间传递的过程称为“耦合”</p>
+<p>直接耦合：输入信号与输出信号在放大电路的传递不经过任何东西直接连接</p>
+<p>此电路的<span class="math inline">\(u_i\)</span>效率不高，因为<span
+class="math inline">\(R_{b1}\)</span>与<span
+class="math inline">\(R_{b2}\)</span>分压后才给到b极</p>
+<p>另外输出至<span
+class="math inline">\(R_L\)</span>​的电压实际上带着直流的，并非纯交流</p>
+<p>要想达到输入纯交流输出纯交流的效果，可以设计如下电路↓</p></li>
+</ul></li>
+<li><p>2.阻容耦合</p>
+<ul>
+<li><img src="https://p.sda1.dev/23/0cc81261f5612c396bd78f3d4d8eee5e/屏幕截图 2025-04-22 190601.png" style="zoom:33%;" /></li>
+<li>电容用于隔断直流连通交流，电容<span
+class="math inline">\(C_1\)</span>隔断直流电流<span
+class="math inline">\(i_B\)</span>，使其只能通过三极管发射结；用<a
+target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E6%88%B4%E7%BB%B4%E5%8D%97%E5%AE%9A%E7%90%86">戴维南定理</a>等效前端电路并分析可以看出，电容<span
+class="math inline">\(C_2\)</span>可将<span
+class="math inline">\(u_o\)</span>中的直流滤除。↓</li>
+<li><img src="https://p.sda1.dev/23/1d6fc932af15e6f38f7c9a792825e8c3/屏幕截图 2025-04-22 191301.png" style="zoom:50%;" /></li>
+</ul></li>
+</ul></li>
+<li><p><strong>五、工作原理</strong></p>
+<ul>
+<li><p>1.无输入信号:</p>
+<ul>
+<li><p><img src="https://p.sda1.dev/23/692722ace8012b77d7b28bc3c06ca3c1/屏幕截图 2025-04-22 192351.png" style="zoom: 50%;" /></p></li>
+<li><p>此图相当于喇叭开机但不说话（无信号输入，工作在放大状态下）</p></li>
+<li><p>无输入信号时，<span class="math inline">\(C_1\)</span>、<span
+class="math inline">\(C_2\)</span>相当于断路，存在<span
+class="math inline">\(u_{BE}\)</span>使三极管工作在放大状态下，由<strong>输入特性曲线</strong>可知存在<span
+class="math inline">\(i_B\)</span>，每一个<span
+class="math inline">\(i_B\)</span>都有一个<strong>输出特性曲线</strong>与之对应。</p>
+<p><strong>输出特性曲线</strong>为<span
+class="math inline">\(i_C\)</span>与<span
+class="math inline">\(u_{CE}\)</span>的关系，当三极管工作在放大区时，<span
+class="math inline">\(i_C\)</span>与<span
+class="math inline">\(i_B\)</span>成比例，<span
+class="math inline">\(i_C\)</span>有着与之对应的<span
+class="math inline">\(u_{CE}\)</span>。这说明放大状态下三极管T的ce之间存在电压<span
+class="math inline">\(u_{CE}\)</span>且<span
+class="math inline">\(u_{CE}\)</span>在自动调节变化，并以此保证<span
+class="math inline">\(i_C\)</span>与<span
+class="math inline">\(i_B\)</span>成比例。</p>
+<p><span class="math inline">\(ic = (U_{CC} -
+u_{CE})/R_C\)</span>，<span class="math inline">\(i_C\)</span>随着<span
+class="math inline">\(u_{CE}\)</span>变化，所以<span
+class="math inline">\(u_{CE}\)</span>是一个可变化值，是根据外电路而来的，无输入信号时，<span
+class="math inline">\(u_{CE} = U_{CC} - (i_CR_C)\)</span> 。</p></li>
+</ul></li>
+<li><p>2.有输入信号：</p>
+<ul>
+<li><img src="https://p.sda1.dev/23/808c3ee481aa95269d5aba5662cefd3c/屏幕截图 2025-04-22 194833.png" style="zoom: 50%;" /></li>
+<li>加入信号<span class="math inline">\(u_i\)</span> ，<span
+class="math inline">\(u_i\)</span>变化引起<span
+class="math inline">\(u_{BE}\)</span>，<span
+class="math inline">\(u_{BE}\)</span>引起<span
+class="math inline">\(i_B\)</span>变化（<strong>输入特性曲线</strong>），<span
+class="math inline">\(i_B\)</span>变化引起<span
+class="math inline">\(i_C\)</span>变化，<span
+class="math inline">\(i_C\)</span>变化引起<span
+class="math inline">\(u_{CE}\)</span>变化，最后输出<span
+class="math inline">\(u_o\)</span>。（<strong><span
+class="math inline">\(u_o\)</span>反相</strong>）</li>
+<li>直流加交流使得总电流在变化的时候仍然是正的。</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="性能指标">2-2 性能指标</h2>
+<ul>
+<li><strong>一、示意图</strong>（由戴维南定理而来）</li>
+</ul>
+<p><img src="https://p.sda1.dev/23/ba6816f677050e2463d806345b074630/屏幕截图 2025-04-22 200355.png" style="zoom:50%;" /></p>
+<ul>
+<li><p>通过<a
+target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E6%88%B4%E7%BB%B4%E5%8D%97%E5%AE%9A%E7%90%86">戴维南定理</a>将输入信号等效成电压源（或电流源）与电阻<span
+class="math inline">\(R_S\)</span>串联，将放大电路等效成输入电阻<span
+class="math inline">\(R_i\)</span>(<em>对于输入信号而言</em>)；对于<span
+class="math inline">\(R_L\)</span>来讲，放大电路以及输入端可等效成电源与内阻相串联的形式，<span
+class="math inline">\(R_o\)</span>即为输出电阻</p>
+<ul>
+<li><p>输入：</p>
+<ul>
+<li><p>若信号源为电压源，<span
+class="math inline">\(R_i\)</span>越大越好：</p></li>
+<li><ol type="1">
+<li><span class="math inline">\(\dot {U_i} = [R_i/(R_i + R_S)]*\dot
+{U_S}\)</span>，<span class="math inline">\(\dot
+{U_i}\)</span>越大越好。所以当信号源为电压源时，输入电阻<span
+class="math inline">\(Ri\)</span>越大越好。</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li><p>戴维南定理等效而来的<span class="math inline">\(\dot
+U_S\)</span>​是理想电压源（功率无穷大），而现实电压源若输出过大功率会导致<strong>失真</strong>，所以需要减小信号源的功率输出</p>
+<p>要减小信号源的功率输出，需要<span class="math inline">\(\dot
+I_i\)</span>减小，所以<span
+class="math inline">\(Ri\)</span>​越大越好</p></li>
+</ol></li>
+</ul></li>
+<li><p>输出：</p>
+<ul>
+<li>如果希望输出一个稳定电压（即希望前端的放大电路近似一个电压源），即要求<span
+class="math inline">\(R_L\)</span>上的<span class="math inline">\(\dot
+U_o\)</span>稳定，那么根据分压公式求输出<span class="math inline">\(\dot
+U_o\)</span>，也就是<span class="math inline">\(R_C\)</span>和<span
+class="math inline">\(R_L\)</span>两个电阻分压，此时<span
+class="math inline">\(R_C\)</span>越小，<span
+class="math inline">\(R_L\)</span>分得越大，也就越稳定了。（<em>因为相当于Uo全都加在RL上了，RL变化，但是两端的电压近似不变，类似电压源</em>）</li>
+<li>如果参数要求<span class="math inline">\(R_L\)</span>变化时<span
+class="math inline">\(\dot
+I_o\)</span>几乎不变，则要求前面近似为一个电流源，此时<span
+class="math inline">\(R_o\)</span>越大（由<a
+target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E8%AB%BE%E9%A0%93%E5%AE%9A%E7%90%86">诺顿定理</a>可得），<span
+class="math inline">\(R_L\)</span>分得的电流越小，那么<span
+class="math inline">\(\dot I_o\)</span>受<span
+class="math inline">\(R_L\)</span>变化的影响越小。</li>
+</ul></li>
+</ul></li>
+<li><p><strong>二、放大倍数</strong></p>
+<ul>
+<li><span class="math inline">\(A_{UU}\)</span>：<span
+class="math inline">\(U_o / U_i\)</span></li>
+<li><span class="math inline">\(A_{UI}\)</span></li>
+<li><span class="math inline">\(A_{IU}\)</span></li>
+<li><span class="math inline">\(A_{II}\)</span></li>
+</ul></li>
+<li><p><strong>三、输入电阻</strong><span
+class="math inline">\(R_i\)</span></p></li>
+<li><p><strong>四、 输出电阻</strong><span
+class="math inline">\(R_o\)</span></p></li>
+</ul>
+<p><img src="https://p.sda1.dev/23/abb033630793a77aabf37fff25feaea2/屏幕截图 2025-04-22 211012.png" style="zoom:50%;" /></p>
+<p>对于多级放大电路，前一级的负载<span
+class="math inline">\(R_L\)</span>为下一级的输入电阻，第二级的输入电阻即为前一级的负载。</p>
+<p>前一级的放大电路相当于下一级的信号源。</p>
+<p><em>所以遇到多级放大电路，<span
+class="math inline">\(R_i\)</span>、<span
+class="math inline">\(R_o\)</span> 以及 等效思路 很重要</em></p>
+<ul>
+<li><p><strong>五、通频带</strong></p>
+<ul>
+<li><img
+src="https://p.sda1.dev/23/322287d0a9d43ffee84f80daa1ad88f5/屏幕截图%202025-04-22%20211739.png" /></li>
+<li>对于<strong>阻容耦合放大电路</strong>，</li>
+<li>信号源频率越低，电容容抗越大，信号越难进入放大电路​​，使得输出信号衰减。</li>
+<li>信号源频率越高，当频率不断升高，结电容容抗不断减小，使得电流旁路（<em>指电流从结电容流过</em>）导致电流放大倍数越来越小，输出的信号也会越来越小（衰减）</li>
+<li>低频和高频都会导致放大倍数衰减，中间不会使信号衰减的频带称为<strong>通频带</strong></li>
+</ul></li>
+<li><p><strong>六、非线性失真</strong></p></li>
+<li><p><strong>七、最大不失真输出电压</strong></p></li>
+<li><p><strong>八、最大输出功率与效率</strong>：在不失真前提下，最大输出功率与输入功率之比即为效率（功放效率）</p>
+<p><em>以后的各类学习中都会关注以上各类参数。</em></p></li>
+</ul>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+    
+        <a href="/post/20250422001902.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">模电第一章</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            lokk233 &copy; 2025 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
